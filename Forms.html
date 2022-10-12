@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-</head>
-<body>
-    <h1>TV-Show suggestions </h1>
-    <!--
+  </head>
+  <body>
+    <header>
+      <h1>TV-Show suggestions</h1>
+      <nav>
+        <ul>
+          <li><a href="Forms.html"> Froms</a></li>
+          <li>
+            <a href="headings-and-paragraphs.html">Headings and Paragraphs </a>
+          </li>
+          <li>
+            <a href="iframes-tables-and-lists.html">
+              Iframes, Tables and Lists</a
+            >
+          </li>
+          <li><a href="index.html">index</a></li>
+          <li><a href="links-and images.html"> Links and Images </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--
         the form tag is used to create a container where all the inputs for a form must be put inside.
         the attribute that are required are name, id and method.
 
@@ -20,7 +38,8 @@
         method has two tupical values: get and post. get is used for forms tar do not asl for peronal infomation(search bars,etc.).
         post is used for the forms that ask for the personal infomation (login and setup pages, elc.).
     -->
-    <form name="TV show-suggestions" id="tv show" method="get"> <!--Get or post -->
+      <form name="TV show-suggestions" id="tv show" method="get">
+        <!--Get or post -->
         <!--this is a text input. type="text", name, and id are all required attributes.the required attribute is the only
         necessary whe you want to make sure the user had to fll in the input before submitting the form.
             
@@ -31,8 +50,8 @@
         all inputs need a label with the for attribute that links the label to the input using the input's id attribute.
         when an input is required, it is inportant to include the word required in the label's text.
     -->
-    <fieldset form="tv-show-suggestion" name="about-show">
-
+      </form>
+      <fieldset form="tv-show-suggestion" name="about-show">
         <!-- 
             feild set is a area in your form where you put input that are more related to eachh toher then they are related 
             to other inputs in the form (i.e., a list of travel items is more related to each other then the country the 
@@ -42,17 +61,19 @@
 
             a legand discribes how the input inside the fieldset are all realated 
         -->
-        <legend>
-            Show suggestions:
-        </legend>
+
+        <legend>Show suggestions:</legend>
         <!--a legand discribes how the input inside the fieldset are all realated -->
-        
-        <label for="tv-shows">Please enter your favourite TV-show suggestions for me[required]:</label>
-        <br>
+
+        <label for="tv-shows"
+          >Please enter your favourite TV-show suggestions for me
+          [required]:</label
+        >
+        <br />
         <input type="text" name="shows" id="tv-shows" reqiured />
-        <input type="submit">
-        <input type="reset">
-       
+        <input type="submit" />
+        <input type="reset" />
+
         <!-- 
             this is a checkbox input. Note, this is an important typically comes before the label.
 
@@ -63,11 +84,11 @@
         <br />
         <br />
         <label for="password">Please Enter Your Password:</label>
-        <br>
+        <br />
         <input type="password" name="userPassword" id="password" />
-        <input type="submit">
-        <input type="reset">
-       
+        <input type="submit" />
+        <input type="reset" />
+
         <!--
             this is a password input.type="password", name, and id are all required attributes. as always, each input needs a label
             with the for attribute to link the label to an input.
@@ -77,31 +98,39 @@
             <input type="password" name="userPassword" id="password" minlength="10" maxlength="" /> 
         -->
 
-        <!--    this is an email input. it requires type, name and id.
-        optianal attributes are minlength to define the mini,=mum length entered by the user and maxlength to define
-        the ,aximum length entererd.
+        <!--    
+            this is an email input. it requires type, name and id.
+            optianal attributes are minlength to define the mini,=mum length entered by the user and maxlength to define
+            the ,aximum length entererd.
 
-        <label for="email-address"> Enter your Email Address </label>
-        <input type="email" name="email" id="email-address" minlength="6" maxlength="40"/>
+            <label for="email-address"> Enter your Email Address </label>
+            <input type="email" name="email" id="email-address" minlength="6" maxlength="40"/>
         -->
         <br />
         <br />
-   
+
         <label for="email-address"> Enter your Email Address </label>
-        <br>
-        <input type="email" name="email" id="email-address" minlength="6" maxlength="40"/>
-        <input type="submit" >
-        <input type="reset">
-        
-        <br/><br />
-        <form name="tv-show-suggestions" id="show-suggestions" method="get">
-            <label for="show">
-                please enter the name of the tv show you are recommending (required):
-            </label>
-            <input name="show" type="text" id="show" required />
-            <br/>
-            <br/>
-            <!-- 
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email-address"
+          minlength="6"
+          maxlength="40" />
+        <input type="submit" />
+        <input type="reset" />
+      </fieldset>
+
+      <br /><br />
+      <form name="tv-show-suggestions" id="show-suggestions" method="get">
+        <label for="show">
+          please enter the name of the tv show you are recommending [required]:
+        </label>
+        <input name="show" type="text" id="show" required />
+
+        <br />
+        <br />
+        <!-- 
                 this is a radip button input, which are good when you want the user to select one option from a list
                 of options.
                 name, id, amd value are all rewuired attributes. the value should represend the choice the user has selected.
@@ -109,32 +138,27 @@
 
                 this is also an input where the label typically shows up after the input.
             -->
-            <fieldset form="tvshows">
-                <legand>which county is this location in?</legand>
+      </form>
+      <fieldset form="tvshows">
+        <legand>which county is this location in?</legand>
 
-                <input type="radio" name="show" id="horror" value="horror">
-                <label for="horror">horror</label>
-                <input type="radio" name="show" id="comedy" value="comedy">
-                <label for="comedy">comedy</label>
-                
-                <input type="radio" name="show" id="Sci-Fi" value="Sci-Fi">
-                <label for="Sci-Fi">Sci-Fi</label>
+        <input type="radio" name="show" id="horror" value="horror" />
+        <label for="horror">horror</label>
+        <input type="radio" name="show" id="comedy" value="comedy" />
+        <label for="comedy">comedy</label>
 
-                <input type="radio" name="show" id="fantsy" value="fantsy">
-                <label for="fantsy">fantsy</label>
+        <input type="radio" name="show" id="Sci-Fi" value="Sci-Fi" />
+        <label for="Sci-Fi">Sci-Fi</label>
 
-
-
-
-
-                
-            </fieldset>
-          <!-- 
-        <form name="genre-of-show" id="genre-select-form" method="get">
-            <label for="genre">Genre of show [required]:</label>
-            <select name="genre" id="genre" >
-                --> 
-         <!--
+        <input type="radio" name="show" id="fantsy" value="fantsy" />
+        <label for="fantsy">fantsy</label>
+      </fieldset>
+      <!-- 
+                <form name="genre-of-show" id="genre-select-form" method="get">
+                <label for="genre">Genre of show [required]:</label>
+                <select name="genre" id="genre" >
+            -->
+      <!--
             this is a select input, which is essentially a dropdown input.
 
             the name and id are the required attributes for a select input.
@@ -143,66 +167,67 @@
             if you can accomplish the same thing you want to do with a differet yupe of inpt(i.e., radio buttions,
             textbased, etc.) , you should use the other method of getting this infomation.
         -->
-               <!--
+      <!--
                 <option value="comedy">comedy</option>
                 <option value="Horror">Horror</option>
                 <option value="Sci-Fi">Sci-Fi</option>
                 <option value="fantsy">fantsy</option>
-            --> 
-            <!--
+            -->
+      <!--
                 optgroup let you group the options nside your select input.
                 label is required so that the optgroup displays what the category is for the options inside the group.
 
                 the options tag is the actual option that a user can select.
                 it requires the value for when the selection is sent to the server. 
             -->
-            </select>
-            <!--
+
+      <!--
                 this is a textarea input. this allows a user to enter multiple lines of infomation for a form.
                 name and id are reqiured attributes.
                 highley recommended attru=ibutes and rows and cols. rows definess the number of lines a user can type before a scrollbar
                 appears. cols defines the number of lines a user can type before their input fo to the next line.
             -->
-            <br/><br />
+      <br /><br />
 
-            <label for="comments"> Additional Comments</label>
-            <br/><br />
-            <textarea name="additionalComments" id="comments" rows="10" cols="50"></textarea>
-            <br/><br />
-            
+      <label for="comments"> Additional Comments</label>
+      <br /><br />
+      <textarea name="additionalComments" id="comments" rows="10" cols="50">
+      </textarea>
 
-                <!-- 
+      <br /><br />
+
+      <!-- 
                     this is a telephone input. type="tel", name and id are all reqiured.
                     minlegth and maxlengthcan be good attributes to use for some basic error-checking 
                 -->
-            <label for="telephone"></ale> please enter your phone number </label>
-            <input type="tele" name="usertl" id="telephone" minlength="14" maxlength="22" />
-        </form>
-        <br />
-        <input type="reset" name="clearForm" id="clear" value="Click to reset " />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <input type="submit" name="submit" id="sumbit" value="Submit">
-        <!--
+      <label for="telephone"> please enter your phone number </label>
+      <input
+        type="tele"
+        name="usertl"
+        id="telephone"
+        minlength="14"
+        maxlength="22" />
+
+      <br />
+      <input type="reset" name="clearForm" id="clear" value="Click to reset " />
+      <br />
+      <br />
+      <br />
+      <br />
+      <input type="submit" name="submit" id="sumbit" value="Submit" />
+      <!--
              this is  an example of a submit button input. Note: this input has to be inside the form tag.
-             type="sumbit
-             ", name and id are all required. value is optonal for the same reason as reset 
+             
         -->
-        
-    </fieldset>
-    <br/>
-   
-    <!-- 
+
+      <br />
+
+      <!-- 
         this is a example of a reset button input. type="reset", name and id are all required.
         value is an optional attribute for if you want to change the default tet button.
     -->
-    
-</form>
 
-
-<!--
+      <!--
         <input type="button">
         <input type="checkbox" >
         <input type="number">
@@ -212,13 +237,6 @@
         <input type="tel">
         <input type="text">
 -->
-        
-
-
-
-
-
-
-    </form>
-</body>
+    </main>
+  </body>
 </html>
