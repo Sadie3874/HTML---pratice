@@ -7,38 +7,42 @@
     <title>Document</title>
 
     <style>
-      #image1 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      div.a {
+      h1,
+      h2,
+      p {
         text-align: center;
-      }
-
-      .books {
-        background-color: lightskyblue;
-        color: royalblue;
-        border: 2px white;
-        margin: 20px;
-        padding: 20px;
       }
     </style>
   </head>
   <body>
-    <div class="books"></div>
-    <div class="a">
-      <h1>BOOKS</h1>
-    </div>
-    <img
-      src="images/Book img.jpg"
-      width="764px"
-      height="447px"
-      alt=""
-      class="center"
-      id="image1"
-      margin-center:auto;
-    />
+    <hr id="myHR" />
+    <heading>
+      <h1>Welcome!</h1>
+      <h2>About</h2>
+
+      <p>
+        This website is about Books and TV shows along with
+        <i id="myItalic">Movies.</i>
+      </p>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myHR");
+          x.style.display = "none";
+        }
+      </script>
+      <nav>
+        <ul>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="Form.html">Survey</a></li>
+          <li><a href="index.html">Home Page</a></li>
+        </ul>
+      </nav>
+    </heading>
   </body>
+  <main>
+    <!--
+      h1-h6
+
+    -->
+  </main>
 </html>
