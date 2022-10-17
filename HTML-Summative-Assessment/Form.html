@@ -19,7 +19,7 @@
       </nav>
     </header>
     <main>
-      <form name="Book-suggestions" id="Book suggestions" method="get"></form>
+      <form name="Book-suggestions" id="Book suggestions" method="get">
       <fieldset form="Book-suggestions" name="Book-name">
         <legend>Book suggestions:</legend>
         <label for="tv-shows">Please enter your Book suggestion [required]: </label>
@@ -41,7 +41,23 @@
 
         <input type="radio" name="book" id="fantsy" value="fantsy" />
         <label for="fantsy">fantsy</label>
-      </fieldset>
+
+        <br />
+        <br />
+        
+        <label for="quantity"> how many days does it take you to read a book?:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="1000">
+
+        <h4>Enter date form was submited</h4>
+        
+          <label for="datemax"> Enter date form was filled out</label>
+          <input type="date" id="datemax" name="date" max="2023-12-31" />
+          <input type="submit" value="submit" />
+      </form>
+       </fieldset>
+
+        
+      
     </main>
   </body>
 </html>
