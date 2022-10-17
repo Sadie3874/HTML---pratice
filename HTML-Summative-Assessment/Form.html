@@ -14,6 +14,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="books.html">Books</a></li>
           <li><a href="Form.html">Survey </a></li>
+          <li><a href="videos.html">Videos</a></li>
         </ul>
       </nav>
     </header>
@@ -21,11 +22,25 @@
       <form name="Book-suggestions" id="Book suggestions" method="get"></form>
       <fieldset form="Book-suggestions" name="Book-name">
         <legend>Book suggestions:</legend>
-        <label for="tv-shows"
-          >Please enter your Book suggestions [required]:
-        </label>
+        <label for="tv-shows">Please enter your Book suggestion [required]: </label>
         <input type="text" name="shows" id="tv-shows" reqiured />
         <input type="reset" />
+        <br />
+        <br />
+
+        <legand>What is the genra of the book</legand>
+
+        <input type="radio" name="book" id="horror" value="horror" />
+        <label for="horror">horror</label>
+
+        <input type="radio" name="book" id="comedy" value="comedy" />
+        <label for="comedy">comedy</label>
+
+        <input type="radio" name="book" id="Sci-Fi" value="Sci-Fi" />
+        <label for="Sci-Fi">Sci-Fi</label>
+
+        <input type="radio" name="book" id="fantsy" value="fantsy" />
+        <label for="fantsy">fantsy</label>
       </fieldset>
     </main>
   </body>
